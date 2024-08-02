@@ -67,7 +67,7 @@ const Quiz = () => {
                 {currentQuestion.options.map((option, index) => (
                     <li
                         key={index}
-                        className={`inline-block hover:border-black mt-1 m-3 option ${answers[currentQuestionIndex] === option.value ? 'selected' : ''}`}
+                        className={`inline-block hover:border-black mt-1 m-3 option ${answers[currentQuestionIndex] === option.value ? 'border-black border-2 w-100 h-100' : ''}`}
                         onClick={() => handleOptionClick(option.value)}
                     >
                         {option.display.startsWith('<img') ? (

@@ -28,7 +28,3 @@ body {
     text-wrap: balance;
   }
 }
-
-.option.selected {
-  border-color: blue;
-}
