@@ -17,17 +17,18 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--background-end-rgb));
+  background: --background-start-rgb;
 }
-
+* {
+  box-sizing: border-box;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.option.selected {
+  border-color: blue;
 }
